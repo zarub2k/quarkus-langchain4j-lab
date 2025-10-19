@@ -2,7 +2,6 @@ package pro.tham;
 
 import jakarta.inject.Inject;
 import picocli.CommandLine;
-import picocli.CommandLine.Command;
 import picocli.CommandLine.Parameters;
 
 /**
@@ -10,7 +9,7 @@ import picocli.CommandLine.Parameters;
  * @author Tham
  */
 
-@Command(name = "poem", mixinStandardHelpOptions = true)
+//@CommandLine.Command(name = "poem", mixinStandardHelpOptions = true)
 public class PoemCommand implements Runnable {
 
     @Parameters(paramLabel = "<topic>", defaultValue = "Java",
