@@ -1,0 +1,15 @@
+meta {
+  name: few-shorts-prompts
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{LANGCHAIN-PATH}}/api/v1/sentiment?text=Today%20a%20worst%20weather
+  body: none
+  auth: none
+}
+
+params:query {
+  text: Today%20a%20worst%20weather
+}
