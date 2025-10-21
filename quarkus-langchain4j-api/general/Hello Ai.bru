@@ -1,0 +1,15 @@
+meta {
+  name: Hello Ai
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{LANGCHAIN-PATH}}/api/v1/helloai?topic=javascript
+  body: none
+  auth: none
+}
+
+params:query {
+  topic: javascript
+}

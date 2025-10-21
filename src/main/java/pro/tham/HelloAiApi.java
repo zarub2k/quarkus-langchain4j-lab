@@ -18,6 +18,10 @@ public class HelloAiApi {
     
     @GET
     public String hello(@QueryParam("topic") String topic, @QueryParam("lines") int lines) {
+        if (lines < 1) {
+            lines = 3;
+        }
+        
         return aiService.writeAPoem(topic, lines);
     }
 }
