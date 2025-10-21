@@ -1,14 +1,13 @@
 package pro.tham.core;
 
 import io.quarkus.runtime.QuarkusApplication;
-import io.quarkus.runtime.annotations.QuarkusMain;
 
 /**
  *
  * @author Tham
  */
 
-@QuarkusMain
+//@QuarkusMain
 public class MainApplication implements QuarkusApplication {
 
     @Override

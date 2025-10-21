@@ -1,8 +1,6 @@
 package pro.tham;
 
 import jakarta.inject.Inject;
-import picocli.CommandLine;
-import picocli.CommandLine.Parameters;
 
 /**
  *
@@ -12,12 +10,12 @@ import picocli.CommandLine.Parameters;
 //@CommandLine.Command(name = "poem", mixinStandardHelpOptions = true)
 public class PoemCommand implements Runnable {
 
-    @Parameters(paramLabel = "<topic>", defaultValue = "Java",
-            description = "The topic")
+//    @Parameters(paramLabel = "<topic>", defaultValue = "Java",
+//            description = "The topic")
     String topic;
     
-    @CommandLine.Option(names = "--lines", defaultValue = "5",
-            description = "The number of lines in the poem")
+//    @CommandLine.Option(names = "--lines", defaultValue = "5",
+//            description = "The number of lines in the poem")
     int lines;
     
     @Inject HelloAiService helloAiService;
